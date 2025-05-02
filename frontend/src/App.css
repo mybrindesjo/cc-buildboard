@@ -6,6 +6,9 @@ body {
 
 /* TodoCard.css */
 .todo-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   background-color: #1531d1; /* gray-200 */
   border-radius: 0.5rem;
   padding: 1rem;
@@ -47,15 +50,15 @@ body {
 }
 
 .status-buttons button:nth-child(1) {
-  background-color: #FFDE87; /* yellow for Pausad */
+  background-color: #75B07D; /* yellow for Pausad */
 }
 
 .status-buttons button:nth-child(2) {
-  background-color: #FF7C85; /* red for Avslutad */
+  background-color: #FFDE87; /* red for Avslutad */
 }
 
 .status-buttons button:nth-child(3) {
-  background-color: #75B07D; /* green for Pågående */
+  background-color: #FF7C85; /* green for Pågående */
 }
 
 .status-buttons button:nth-child(4) {
@@ -66,21 +69,17 @@ body {
   opacity: 0.9;
 }
 
-.add-todo {
+.add-todo-btn{
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
-}
-
-.add-todo-btn {
-  display: flex;
-  background-color: #2B2E3F;
+  background-color: #4B5563; /* gray-600 */
   border-radius: 0.5rem;
-  border: 2px dashed #ffffff;
   padding: 2rem 10rem;
   margin: 1rem 0;
-  color: #ffffff;
-  justify-content: space-between;
+  color: #ffffff; /* gray-900 */
 }
+
 
 .add-todo .plus-icon {
   font-size: 1.25rem; /* Slightly larger font for the "+" */
@@ -104,5 +103,10 @@ body {
   color: #ffffff; /* gray-900 */
 }
 
+.status-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
 
 

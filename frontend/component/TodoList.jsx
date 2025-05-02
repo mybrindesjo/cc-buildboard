@@ -32,7 +32,7 @@ const TodoList = () => {
   };
 
   return (
-    <div>
+    <div className='todo-list'>
       <AddTodo onAdd={addTodo} />
       <button onClick={saveTodosToLocalStorage}>Save Todos</button>
       {todos.map((todo, index) => (
