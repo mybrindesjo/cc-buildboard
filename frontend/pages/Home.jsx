@@ -7,7 +7,6 @@ const Home = () => {
     <div className="home-page">
         <Profile />
         <div className="divider"></div>
-        <TodoList />
         
    </div>
   )

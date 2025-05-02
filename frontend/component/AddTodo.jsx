@@ -43,7 +43,9 @@ const AddTodo = ({ onAdd }) => {
           <button onClick={() => setIsAdding(false)}>Cancel</button>
         </div>
       ) : (
-        <button onClick={() => setIsAdding(true)}>Add Todo</button>
+        <button className="add-todo-btn" onClick={() => setIsAdding(true)}>
+          Skapa ny <span className="plus-icon">+</span>
+        </button>
       )}
     </div>
   );
